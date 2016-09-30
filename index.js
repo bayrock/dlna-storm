@@ -7,9 +7,9 @@ const Browser = new SSDPBrowser();
 const Render = require('./render');
 
 Program
-  .version(Info.version)
-  .option('-u, --url [link]', 'input direct link to video', '')
-  .parse(process.argv);
+	.version(Info.version)
+	.option('-u, --url [link]', 'input direct link to video', '')
+	.parse(process.argv);
 
 if (!Program.url) {
 	Program.outputHelp();
@@ -20,7 +20,7 @@ if (!Program.url) {
 Browser.start();
 
 Browser.onDevice(function(device) {
-  console.log(`Discovered ${device.name}`);
+	console.log(`Discovered ${device.name}`);
 	Render(device, Program.url);
 	//Browser.destroy();
 });
