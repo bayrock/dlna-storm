@@ -1,0 +1,19 @@
+{
+  "name": "dlna-storm",
+  "version": "1.0.0",
+  "description": "Cast web videos to DLNA devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dlna"
+  ],
+  "author": "Bailey Chestnut",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "ssdp-js": "^1.0.1",
+    "upnp-rndr": "^1.2.2"
+  }
+}
